@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>View Submit</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Submit ID</th>
+                <th>Resume</th>
+                <th>Transcript</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="filesTable">
+        </tbody>
+    </table>
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Edit Submission</h2>
+            <form id="editSubmit">
+                <div>
+                <label for="sub_id">Sub_id:</label>
+                <input type="text" id="sub_id" readonly>
+                </div>
+                <div class="resume-hidden">
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" required>
+                </div>
+                <div>
+                <label for="transcript">Transcript:</label>
+                <input type="file" id="transcript" required>
+                </div>
+                <div class="container-btn-hidden">
+                    <button type="button" id="saveChangesBtn">Save Changes</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Container-btn">
+        <a href="/"><button class="btn view">submission</button></a>
+    </div>
+</body>
+<script type="module" src="/admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

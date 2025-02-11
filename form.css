@@ -1,0 +1,55 @@
+body{
+    height: 100vh;
+}
+
+.Container{
+    padding: 20px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin: auto;
+    
+}
+
+.Container-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.Resume ,.Transcript{
+    margin-top: 20px;
+}
+
+.btn{
+    margin-top: 15px;
+    background-color: white;
+    color: black ;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.view{
+    text-align: center;
+}

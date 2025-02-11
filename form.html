@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Submit</title>
+</head>
+<body>
+    <div class="Container">
+        <form>
+            <h2>Add your submission</h2>
+            <div class="Resume">
+            Resume:
+            <input type="file" id="resume"/>
+            </div>
+            <div class="Transcript">
+            Transcript:
+            <input type="file" id="transcript"/>
+            </div>
+            <button type="button" class="btn" id="submitBtn">submit</button>
+        </form> 
+    </div>
+    <div class="Container-btn">
+    <a href="/view"><button class="btn view">view</button></a>
+    </div>
+    <script type="module" src="/form.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
