@@ -6,6 +6,7 @@ const app = express();
 dotenv.config();
 
 app.use(express.static(path.join(`${__dirname}`)));
+app.use(express.static("public"));
 
 app.get('/', (req, res) => {
     console.log("Request at " + req.url)
